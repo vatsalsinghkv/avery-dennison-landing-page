@@ -1,0 +1,20 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin spaceY($value) {
+  display: flex;
+  flex-direction: column;
+  gap: $value;
+}
+
+@mixin btnReset {
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

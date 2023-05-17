@@ -1,0 +1,39 @@
+@use '../utils/mixins' as *;
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    @include flexCenter;
+    @include btnReset;
+
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    padding: 1.6rem 6rem;
+    color: var(--color-light);
+    background: var(--color-accent);
+    border-radius: 9px;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  &:focus {
+    outline: 2px dashed var(--color-accent);
+    outline-offset: 4px;
+  }
+
+  &-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

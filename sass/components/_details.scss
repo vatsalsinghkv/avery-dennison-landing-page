@@ -1,0 +1,42 @@
+@use '../utils/mixins/' as *;
+
+.details {
+  margin-bottom: 8rem;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 4.7rem;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 7rem;
+  }
+
+  &__icon {
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    flex: 1;
+    background-color: var(--color-light);
+    border-radius: 50%;
+    @include flexCenter;
+  }
+
+  &__image {
+    width: 5rem;
+  }
+
+  &__content {
+  }
+
+  &__heading {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    color: var(--color-text-light);
+    line-height: 3.4rem;
+  }
+}

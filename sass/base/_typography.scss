@@ -1,0 +1,32 @@
+.h-title {
+  font-size: 5.1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 6.4rem;
+}
+
+.h-subtitle {
+  font-size: 3.4rem;
+  font-weight: 300;
+  line-height: 4.1rem;
+  color: var(--color-grey-1);
+  max-width: 580px;
+}
+
+.h-primary {
+  font-size: 5.1rem;
+  font-weight: 600;
+  line-height: 6.3rem;
+  color: var(--color-dark);
+}
+
+.h-secondary {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2.2rem;
+  text-transform: capitalize;
+
+  &--light {
+    color: var(--color-grey-1);
+  }
+}

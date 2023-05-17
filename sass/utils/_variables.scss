@@ -1,0 +1,55 @@
+@use 'sass:math';
+
+:root {
+  @font-face {
+    font-family: 'Aktifoa';
+    src: url('/fonts/aktifoa-light.otf') format('opentype');
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'Aktifoa';
+    src: url('/fonts/aktifoa-book.otf') format('opentype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Aktifoa';
+    src: url('/fonts/aktifoa-medium.otf') format('opentype');
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Aktifoa';
+    src: url('/fonts/aktifoa-semibold.otf') format('opentype');
+    font-weight: 600;
+  }
+
+  --color-accent: #f26621;
+  --color-text: #131313;
+  --color-text-light: #515151;
+  --color-dark: #000;
+  --color-dark-2: #1a1a1a;
+  --color-light: #fff;
+  --color-grey-1: #292929;
+  --color-grey-2: #5d5d5d;
+  --color-grey-3: #727272;
+  --color-grey-4: #e5e5e5;
+
+  // FONTS
+  --font-primary: 'Aktifoa', sans-serif;
+  --font-size: 2rem;
+  --font-weight: 200;
+  --line-height: 28px;
+
+  // Sizes
+  --max-width: 163.8rem;
+  // 110rem - 1024px
+}
+
+// BREAK POINTS
+$lg: math.div(1000, 16) * 1em;
+$md: math.div(810, 16) * 1em;
+$md-sm: math.div(600, 16) * 1em;
+$sm: math.div(375, 16) * 1em;
+$sm-sm: math.div(315, 16) * 1em;

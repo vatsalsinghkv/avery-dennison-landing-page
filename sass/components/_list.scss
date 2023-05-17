@@ -1,0 +1,9 @@
+.list {
+  margin-left: 15px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 2.8rem;
+    }
+  }
+}

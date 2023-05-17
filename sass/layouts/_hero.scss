@@ -1,0 +1,21 @@
+@use '../utils/mixins' as *;
+
+.hero-section {
+  padding: 7.6rem 5%;
+  background: url('images/banner.png') no-repeat;
+  background-size: cover;
+
+  &__content {
+    position: relative;
+    max-width: 760px;
+    @include spaceY(5rem);
+  }
+}
+
+.header {
+  padding-bottom: 13.1rem;
+}
+
+.logo {
+  display: inline-block;
+}
