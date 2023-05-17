@@ -1,7 +1,12 @@
-@use '../utils/mixins/' as *;
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 .details {
   margin-bottom: 8rem;
+
+  @media screen and (max-width: $xs) {
+    margin-bottom: calc(40px / 7px * 1rem);
+  }
 }
 
 .detail {
@@ -10,8 +15,17 @@
   gap: 4.7rem;
   align-items: center;
 
+  @media screen and (max-width: $lg) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: 7rem;
+
+    @media screen and (max-width: $sm) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__icon {
@@ -22,13 +36,15 @@
     background-color: var(--color-light);
     border-radius: 50%;
     @include flexCenter;
+
+    @media screen and (max-width: $sm) {
+      height: 8.2rem;
+      width: 8.2rem;
+    }
   }
 
   &__image {
     width: 5rem;
-  }
-
-  &__content {
   }
 
   &__heading {

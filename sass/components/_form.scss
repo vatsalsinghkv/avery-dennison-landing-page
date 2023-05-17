@@ -1,18 +1,49 @@
+@use '../utils/variables' as *;
+
 .form {
   background-color: var(--color-light);
   padding: 10rem 6rem;
   box-shadow: 0px 14px 27px #00000017;
   border-radius: 13px;
-  width: 734px;
+  max-width: 734px;
+  width: 100%;
   position: absolute;
-  top: 8%;
-  right: 8%;
+  top: 100px;
+  right: 70px;
+
+  @media screen and (max-width: $xxl) {
+    padding: 3rem 2.7rem;
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: $xl) {
+    max-width: 734px;
+    top: 900px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (max-width: $lg) {
+    top: 750px;
+    width: 90%;
+  }
+
+  @media screen and (max-width: $xs) {
+    top: 500px;
+  }
 
   &__title {
     font-weight: 600;
     font-size: 3.4rem;
     line-height: 4.1rem;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
+
+    @media screen and (max-width: $xs) {
+      // px in rems
+      font-size: calc(16px / 7px * 1rem);
+      line-height: calc(19px / 7px * 1rem);
+      margin-bottom: 0rem;
+    }
   }
 
   &__container {
@@ -20,7 +51,12 @@
     margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    gap: 2.5rem;
+
+    @media screen and (max-width: $xs) {
+      margin-top: 2.5rem;
+      gap: 1.7rem;
+    }
   }
 
   &__control {
@@ -32,7 +68,15 @@
   &__label {
     font-weight: 400;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: $xs) {
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+
+      font-size: calc(10px / 7px * 1rem);
+      line-height: calc(12px / 7px * 1rem);
+    }
   }
 
   &__input {
@@ -43,6 +87,11 @@
     padding: 2rem;
     border: 0.25px solid var(--color-grey-3);
     border-radius: 8px;
+
+    @media screen and (max-width: $xs) {
+      border-radius: 2px;
+      height: 29px;
+    }
   }
 
   &__agreement {
@@ -50,6 +99,12 @@
     margin-bottom: 3rem;
     display: flex;
     align-items: start;
+
+    @media screen and (max-width: $xs) {
+      // px in rems
+      font-size: calc(10px / 7px * 1rem);
+      line-height: calc(17px / 7px * 1rem);
+    }
 
     & input[type='checkbox'] {
       margin-right: 15px;
@@ -65,6 +120,12 @@
         transform: translateX(-30%);
         height: 170%;
         width: 170%;
+
+        @media screen and (max-width: $xs) {
+          transform: translateX(-40%);
+          height: 120%;
+          width: 120%;
+        }
 
         background-color: var(--color-light);
         border: 1px solid var(--color-grey-3);

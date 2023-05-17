@@ -12,7 +12,13 @@
       <div class="container">
         <header class="header">
           <a href="/">
-            <img class="logo" src="/images/logo.png" alt="logo" />
+            <picture class="logo">
+              <source
+                media="(max-width: 640px)"
+                srcset="/images/logo-phone.png"
+              />
+              <img src="/images/logo.png" alt="logo" />
+            </picture>
           </a>
         </header>
         <div class="hero-section__content">
@@ -27,33 +33,39 @@
           <div class="features">
             <div class="feature">
               <div class="feature__icon">
-                <img
-                  src="/icons/quality.svg"
-                  class="feature__img"
-                  alt="quality icon"
-                />
+                <picture class="feature__img">
+                  <source
+                    media="(max-width: 430px)"
+                    srcset="/icons/quality-phone.svg"
+                  />
+                  <img src="/icons/quality.svg" alt="quality icon" />
+                </picture>
               </div>
               <h3 class="feature__text">Maximum Durability</h3>
             </div>
 
             <div class="feature">
               <div class="feature__icon">
-                <img
-                  src="/icons/shield.svg"
-                  class="feature__img"
-                  alt="shield icon"
-                />
+                <picture class="feature__img">
+                  <source
+                    media="(max-width: 430px)"
+                    srcset="/icons/shield-phone.svg"
+                  />
+                  <img src="/icons/shield.svg" alt="shield icon" />
+                </picture>
               </div>
               <p class="feature__text">Enhanced Appearance</p>
             </div>
 
             <div class="feature">
               <div class="feature__icon">
-                <img
-                  src="/icons/gloss.svg"
-                  class="feature__img"
-                  alt="gloss icon"
-                />
+                <picture class="feature__img">
+                  <source
+                    media="(max-width: 430px)"
+                    srcset="/icons/gloss-phone.svg"
+                  />
+                  <img src="/icons/gloss.svg" alt="gloss icon" />
+                </picture>
               </div>
               <p class="feature__text">High Gloss Finish</p>
             </div>
@@ -178,91 +190,95 @@
     <section id="details" class="details-section">
       <div class="details-section__content">
         <div class="details-section__content--left">
-          <img
-            src="/images/floral.png"
-            class="details-section__img"
-            alt="floral image"
-          />
+          <picture class="details-section__img">
+            <source
+              media="(max-width: 768px)"
+              srcset="/images/floral-phone.png"
+            />
+            <img src="/images/floral.png" alt="floral image" />
+          </picture>
         </div>
         <div class="details-section__content--right">
-          <h1 class="h-primary details-section__heading">Why us?</h1>
+          <div class="details-section__content__container">
+            <h1 class="h-primary details-section__heading">Why us?</h1>
 
-          <div class="details">
-            <div class="detail">
-              <div class="detail__icon">
-                <img
-                  src="/icons/quality-dark.svg"
-                  class="detail__image"
-                  alt="quality icon"
-                />
+            <div class="details">
+              <div class="detail">
+                <div class="detail__icon">
+                  <img
+                    src="/icons/quality-dark.svg"
+                    class="detail__image"
+                    alt="quality icon"
+                  />
+                </div>
+                <div class="detail__content">
+                  <h3 class="h-secondary h-secondary--light detail__heading">
+                    Quality Product
+                  </h3>
+                  <p class="detail__text">
+                    Our digital overlaminate films are made from the highest
+                    quality materials and are designed to provide superior
+                    protection and appearance to your digital prints.
+                  </p>
+                </div>
               </div>
-              <div class="detail__content">
-                <h3 class="h-secondary h-secondary--light detail__heading">
-                  Quality Product
-                </h3>
-                <p class="detail__text">
-                  Our digital overlaminate films are made from the highest
-                  quality materials and are designed to provide superior
-                  protection and appearance to your digital prints.
-                </p>
+              <div class="detail">
+                <div class="detail__icon">
+                  <img
+                    src="/icons/boxes.svg"
+                    class="detail__image"
+                    alt="boxes icon"
+                  />
+                </div>
+                <div class="detail__content">
+                  <h3 class="h-secondary h-secondary--light detail__heading">
+                    Multiple Options
+                  </h3>
+                  <p class="detail__text">
+                    We offer DOL Max in a 2.1 mil gloss finish and 1.3 mil
+                    optically clear, gloss finish. This allows you to choose the
+                    perfect film thickness level for your specific application,
+                    ensuring your graphics look the best and stand out from the
+                    competition.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="detail">
-              <div class="detail__icon">
-                <img
-                  src="/icons/boxes.svg"
-                  class="detail__image"
-                  alt="boxes icon"
-                />
+              <div class="detail">
+                <div class="detail__icon">
+                  <img
+                    src="/icons/communication.svg"
+                    class="detail__image"
+                    alt="communication icon"
+                  />
+                </div>
+                <div class="detail__content">
+                  <h3 class="h-secondary h-secondary--light detail__heading">
+                    Expertise and Support
+                  </h3>
+                  <p class="detail__text">
+                    Our team of experts are available to provide guidance and
+                    support throughout the entire process, from selecting the
+                    right product for your needs to installation and beyond.
+                  </p>
+                </div>
               </div>
-              <div class="detail__content">
-                <h3 class="h-secondary h-secondary--light detail__heading">
-                  Multiple Options
-                </h3>
-                <p class="detail__text">
-                  We offer DOL Max in a 2.1 mil gloss finish and 1.3 mil
-                  optically clear, gloss finish. This allows you to choose the
-                  perfect film thickness level for your specific application,
-                  ensuring your graphics look the best and stand out from the
-                  competition.
-                </p>
-              </div>
-            </div>
-            <div class="detail">
-              <div class="detail__icon">
-                <img
-                  src="/icons/communication.svg"
-                  class="detail__image"
-                  alt="communication icon"
-                />
-              </div>
-              <div class="detail__content">
-                <h3 class="h-secondary h-secondary--light detail__heading">
-                  Expertise and Support
-                </h3>
-                <p class="detail__text">
-                  Our team of experts are available to provide guidance and
-                  support throughout the entire process, from selecting the
-                  right product for your needs to installation and beyond.
-                </p>
-              </div>
-            </div>
-            <div class="detail">
-              <div class="detail__icon">
-                <img
-                  src="/icons/shield-dark.svg"
-                  class="detail__image"
-                  alt="shield icon"
-                />
-              </div>
-              <div class="detail__content">
-                <h3 class="h-secondary h-secondary--light detail__heading">
-                  Durability Assurance
-                </h3>
-                <p class="detail__text">
-                  Trust our products with confidence, as we offer industry
-                  leading durability assurance for our overlaminate films.
-                </p>
+              <div class="detail">
+                <div class="detail__icon">
+                  <img
+                    src="/icons/shield-dark.svg"
+                    class="detail__image"
+                    alt="shield icon"
+                  />
+                </div>
+                <div class="detail__content">
+                  <h3 class="h-secondary h-secondary--light detail__heading">
+                    Durability Assurance
+                  </h3>
+                  <p class="detail__text">
+                    Trust our products with confidence, as we offer industry
+                    leading durability assurance for our overlaminate films.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -274,14 +290,16 @@
 
     <footer class="footer">
       <div class="container nav">
-        <div class="nav__item">
+        <div class="nav__item footer__logo">
           <h2 class="nav__title">Best solutions from</h2>
           <a href="/">
-            <img
-              src="/images/logo-light.png"
-              alt="logo"
-              class="logo footer__logo"
-            />
+            <picture class="logo">
+              <source
+                media="(max-width: 640px)"
+                srcset="/images/logo-light-phone.png"
+              />
+              <img src="/images/logo-light.png" alt="logo" />
+            </picture>
           </a>
         </div>
 

@@ -40,16 +40,17 @@
   --font-primary: 'Aktifoa', sans-serif;
   --font-size: 2rem;
   --font-weight: 200;
-  --line-height: 28px;
 
   // Sizes
-  --max-width: 163.8rem;
+  --max-width: 1700px;
   // 110rem - 1024px
 }
 
 // BREAK POINTS
-$lg: math.div(1000, 16) * 1em;
-$md: math.div(810, 16) * 1em;
-$md-sm: math.div(600, 16) * 1em;
-$sm: math.div(375, 16) * 1em;
-$sm-sm: math.div(315, 16) * 1em;
+$xxl: math.div(1700, 16) * 1em; // 1700px
+$xl: math.div(1435, 16) * 1em; // 1450px
+$lg: math.div(1024, 16) * 1em; // 1024px
+$md: math.div(768, 16) * 1em; // 768px
+$sm: math.div(640, 16) * 1em; // 640px
+$xs: math.div(430, 16) * 1em; // 375px
+$xss: math.div(375, 16) * 1em;

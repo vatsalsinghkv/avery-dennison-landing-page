@@ -1,19 +1,46 @@
 @use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 .hero-section {
   padding: 7.6rem 5%;
   background: url('images/banner.png') no-repeat;
   background-size: cover;
 
+  @media screen and (max-width: $xl) {
+    padding-bottom: 50rem;
+    background: url('images/banner-phone.png') no-repeat;
+    background-size: cover;
+    background-position: 80% center;
+  }
+
+  @media screen and (max-width: $lg) {
+    padding-bottom: 70rem;
+  }
+
+  @media screen and (max-width: $xs) {
+    // px in rems
+    padding-top: calc(22px / 7px * 1rem);
+  }
+
   &__content {
     position: relative;
     max-width: 760px;
     @include spaceY(5rem);
+
+    @media screen and (max-width: $xs) {
+      // px in rems
+      max-width: 330px;
+    }
   }
 }
 
 .header {
   padding-bottom: 13.1rem;
+
+  @media screen and (max-width: $xs) {
+    // px in rems
+    padding-bottom: calc(45px / 7px * 1rem);
+  }
 }
 
 .logo {

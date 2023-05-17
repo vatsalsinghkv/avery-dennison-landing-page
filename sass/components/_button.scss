@@ -1,4 +1,5 @@
 @use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 .btn {
   &,
@@ -14,6 +15,13 @@
     color: var(--color-light);
     background: var(--color-accent);
     border-radius: 9px;
+
+    @media screen and (max-width: $xs) {
+      padding: 0.9rem 3rem;
+      font-size: calc(14px / 7px * 1rem);
+      line-height: calc(17px / 7px * 1rem);
+      border-radius: 2px;
+    }
   }
 
   &:hover {

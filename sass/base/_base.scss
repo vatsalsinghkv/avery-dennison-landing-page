@@ -5,13 +5,15 @@ html {
   font-size: math.div(100, 16) * 10%; //62.5% - 10px
   // font-size: 10px;
 
-  /* @media only screen and (max-width: $lg) {
-		font-size: math.div(100, 16) * 9%;
-	}
+  @media only screen and (max-width: $lg) {
+    font-size: math.div(100, 16) * 8%;
+    // font-size: 8px;
+  }
 
-	@media only screen and (max-width: $md) {
-		font-size: math.div(100, 16) * 8%;
-	} */
+  @media only screen and (max-width: $md) {
+    font-size: math.div(100, 16) * 7%;
+    // font-size: 7px;
+  }
 
   scroll-behavior: smooth;
 }
@@ -21,7 +23,11 @@ body {
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   color: var(--color-text);
-  line-height: var(--line-height);
+  line-height: 28px;
+
+  @media screen and (max-width: $xs) {
+    line-height: calc(20px / 7px * 1rem);
+  }
 }
 
 .section {

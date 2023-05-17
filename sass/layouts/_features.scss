@@ -1,6 +1,33 @@
+@use '../utils/variables' as *;
+
 .features-section {
   background: url('images/banner-2.png') no-repeat;
   background-size: cover;
+
+  @media screen and (max-width: $xl) {
+    padding-top: 70rem;
+    background: url('images/banner-2-phone.png') no-repeat;
+    background-size: cover;
+  }
+
+  @media screen and (max-width: $lg) {
+    padding-bottom: 70rem;
+    background-position-y: 30rem;
+  }
+
+  @media screen and (max-width: $md) {
+    padding-top: 140rem;
+  }
+
+  @media screen and (max-width: $sm) {
+    background-size: contain;
+    background-position-y: bottom;
+  }
+
+  @media screen and (max-width: $xs) {
+    padding-top: 60rem;
+    padding-bottom: 45rem;
+  }
 
   &__header {
     margin-bottom: 3.6rem;
@@ -17,5 +44,9 @@
   // list
   &__features {
     margin-bottom: 6.8rem;
+
+    @media screen and (max-width: $xs) {
+      margin-bottom: calc(30px / 7px * 1rem);
+    }
   }
 }
