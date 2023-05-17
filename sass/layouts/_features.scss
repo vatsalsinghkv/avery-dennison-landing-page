@@ -1,12 +1,12 @@
 @use '../utils/variables' as *;
 
 .features-section {
-  background: url('images/banner-2.png') no-repeat;
+  background: url('$images/banner-2.png') no-repeat;
   background-size: cover;
 
   @media screen and (max-width: $xl) {
     padding-top: 70rem;
-    background: url('images/banner-2-phone.png') no-repeat;
+    background: url('$images/banner-2-phone.png') no-repeat;
     background-size: cover;
   }
 

@@ -3,12 +3,12 @@
 
 .hero-section {
   padding: 7.6rem 5%;
-  background: url('images/banner.png') no-repeat;
+  background: url('$images/banner.png') no-repeat;
   background-size: cover;
 
   @media screen and (max-width: $xl) {
     padding-bottom: 50rem;
-    background: url('images/banner-phone.png') no-repeat;
+    background: url('$images/banner-phone.png') no-repeat;
     background-size: cover;
     background-position: 80% center;
   }
